@@ -1,0 +1,47 @@
+import random
+import colorsys
+import numpy as np
+
+
+# Set a seed for reproducibility
+seed_value = 42
+np.random.seed(seed_value)
+
+def random_RGB():
+    while True:
+        # Generate random RGB values
+        r, g, b = np.random.randint(0, 256, 3)
+
+        # Convert RGB to HSL (Hue, Saturation, Lightness)
+        h, s, l = colorsys.rgb_to_hls(r / 255.0, g / 255.0, b / 255.0)
+
+        # Avoid light colors (adjust the threshold as needed)
+        if l > 0.5:
+            return r, g, b
+
+
+def get_colors(ntables, item_path):
+    names=[]
+
+    for nf in range(1, ntables, 1):
+        file_name = item_path.format(nf)
+
+        f=open(file_name,"r")
+        lines=f.readlines()
+    
+        for x in lines:
+            names.append(x.split('\t')[5])
+        f.close()
+
+
+    names_set = set(names)
+    names_list = list(names_set)
+
+    itm_color={}
+
+    for item in names_list:
+        itm_color[item]=random_RGB()
+
+    return itm_color
+    
+    

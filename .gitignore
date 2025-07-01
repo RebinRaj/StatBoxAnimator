@@ -1,0 +1,30 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+
+# Virtual environments
+env/
+venv/
+.venv/
+
+# Output videos or images
+*.mp4
+*.avi
+*.mov
+
+# Cache or temp files
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Ignore all files inside these folders
+data/tables/*
+data/images/*
+vidResult/*
+
+# But keep the folders themselves
+!data/images/.gitkeep
+!data/tables/.gitkeep
+!vidResult/.gitkeep
+
