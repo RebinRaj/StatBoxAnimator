@@ -68,14 +68,15 @@ This engine is general-purpose and can be adapted to animate rankings in domains
 
 3. **Download and place player images**
 
-    👉 Recommended: [Download the curated image ZIP here](https://drive.google.com/file/d/1HlcYAcI-KswJOxU7k7A3NU5OwtmPAm9N/view?usp=drive_link)  
-       - Here is the link to [Download curated tables](https://drive.google.com/file/d/1_nq4hUSniMor5Bxx2Nvg7FSOKRfMk4Je/view?usp=drive_link)
+    👉 Recommended: [Download the curated image ZIP here](https://drive.google.com/file/d/1HlcYAcI-KswJOxU7k7A3NU5OwtmPAm9N/view?usp=drive_link)
+   
     Extract it to:
     ```
     data/images/
     ```
-
-4. **Run the animation generator**
+    - Here is the link to [Download curated tables](https://drive.google.com/file/d/1_nq4hUSniMor5Bxx2Nvg7FSOKRfMk4Je/view?usp=drive_link)
+  
+5. **Run the animation generator**
     ```bash
     python StatBoxAnimator.py
     ```
