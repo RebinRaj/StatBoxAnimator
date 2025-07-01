@@ -61,7 +61,7 @@ This engine is general-purpose and can be adapted to animate rankings in domains
     ```
 
 2. **Install dependencies**
-    *(Add to `requirements.txt` if not done yet)*  
+    - check requiremnts.txt
     ```bash
     pip install beautifulsoup4 requests opencv-python Pillow
     ```
